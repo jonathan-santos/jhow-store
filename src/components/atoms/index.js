@@ -1,1 +1,5 @@
 export * from './button'
+export * from './input'
+export * from './section'
+export * from './text'
+export * from './title'
