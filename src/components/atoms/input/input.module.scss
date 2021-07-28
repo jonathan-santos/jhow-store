@@ -1,6 +1,18 @@
+.container {
+  position: relative;
+}
+
 .input {
+  width: 100%;
   border: 0.5rem solid var(--color-section);
   border-radius: 1.2rem;
   padding: 0.5rem;
   background: var(--color-background);
+}
+
+.iconDelete {
+  position: absolute;
+  right: 1rem;
+  top: 15%;
+  cursor: pointer;
 }
