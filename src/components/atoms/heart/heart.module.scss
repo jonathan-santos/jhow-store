@@ -1,0 +1,10 @@
+.heart {
+  all: unset;
+  cursor: pointer;
+
+  &:hover,
+  &:active,
+  &:focus {
+    filter: brightness(80%);
+  }
+}
