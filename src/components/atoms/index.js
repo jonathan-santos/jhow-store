@@ -1,5 +1,7 @@
 export * from './button'
+export * from './heart'
 export * from './input'
 export * from './section'
+export * from './star'
 export * from './text'
 export * from './title'
