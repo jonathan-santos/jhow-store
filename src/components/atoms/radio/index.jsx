@@ -6,24 +6,34 @@ import IconRadioChecked from '../../../public/icons/radio-checked.svg'
 
 import styles from './radio.module.scss'
 
-export const Radio = ({ id, checked }) => (
-  <div>
-    <input id={id} name={id} type="radio" className={styles.radio} />
+export const Radio = (props) => {
+  const { id, toggle, checked } = props
 
-    <label>
+  return (
+    <label className={styles.radio} htmlFor={id}>
+      <input
+        {...props}
+        id={id}
+        name={id}
+        type="radio"
+        hidden
+        onChange={toggle}
+      />
+
       <img src={checked ? IconRadioChecked : IconRadioUnChecked} />
     </label>
-  </div>
-)
+  )
+}
 
 Radio.defaultProps = {
-  id: '1',
-  checked: false
+  checked: false,
+  toggle: null
 }
 
 Radio.propTypes = {
-  id: PropTypes.string,
-  checked: PropTypes.bool
+  id: PropTypes.string.isRequired,
+  checked: PropTypes.bool,
+  toggle: PropTypes.func
 }
 
 export default Radio
