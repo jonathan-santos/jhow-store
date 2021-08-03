@@ -1,0 +1,18 @@
+.quantity-selector {
+  background-color: var(--color-background-light);
+  display: flex;
+  align-items: center;
+  
+  .input {
+    width: 4.8rem;
+    height: 6rem;
+    text-align: center;
+    -moz-appearance: textfield;
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  }
+}
