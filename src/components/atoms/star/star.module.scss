@@ -1,7 +1,9 @@
 .star {
   all: unset;
   cursor: pointer;
+}
 
+.selectable {
   &:hover,
   &:active,
   &:focus {
