@@ -11,20 +11,14 @@ import styles from './quantitySelector.module.scss'
 export const QuantitySelector = (props) => {
   const { quantity, change } = props
 
-  const onFormSubmit = (e) => {
-    e.preventDefault()
-
-    alert(1)
-  }
-
   return (
-    <form onSubmit={onFormSubmit} className={styles['quantity-selector']}>
+    <form className={styles['quantity-selector']}>
       <Button onClick={() => change(quantity - 1)} color="in-dark" rounded>
         <img src={IconMinus} />
       </Button>
 
       <Input
-        // onInput={(value) => change(value)}
+        onChange={(value) => change(value)}
         className={styles.input}
         value={quantity}
         type="number"
