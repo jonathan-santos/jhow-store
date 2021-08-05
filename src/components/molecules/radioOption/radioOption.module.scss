@@ -1,0 +1,22 @@
+.radio-option {
+  border: 0.15rem solid #000000;
+  border-radius: 1.2rem;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.radio {
+  &:hover,
+  &:active,
+  &:focus {
+    filter: brightness(80%);
+  }
+}
+
+.title {
+  margin-right: 0.5rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
