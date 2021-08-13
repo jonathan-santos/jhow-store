@@ -38,14 +38,14 @@ $max-items: 2;
       z-index: 1;
     }
 
-    $next-item: if($i + 1 < $max-items, $i + 1, 0);
+    $next-item: if($i + 1 <= $max-items, $i + 1, 0);
     &:checked ~ .items .item-#{$next-item} {
       transform: translatex(40%) scale(0.8);
       opacity: 0.4;
       z-index: 0;
     }
 
-    $previous-item: if($i - 1> 0, $i - 1, $max-items);
+    $previous-item: if($i - 1 >= 0, $i - 1, $max-items);
     &:checked ~ .items .item-#{$previous-item} {
       transform: translatex(-40%) scale(0.8);
       opacity: 0.4;
