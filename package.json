@@ -1,6 +1,8 @@
 {
   "scripts": {
+    "start": "next start",
     "dev": "next dev",
+    "build": "next build",
     "storybook": "start-storybook -p 9009 --ci",
     "storybook:build": "build-storybook",
     "storybook:deploy": "storybook-to-ghpages",
