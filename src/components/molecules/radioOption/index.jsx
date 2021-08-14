@@ -1,8 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import IconRadioUnChecked from '../../../public/icons/radio-unchecked.svg'
-import IconRadioChecked from '../../../public/icons/radio-checked.svg'
+import IconRadioUnChecked from '../../../../public/icons/radio-unchecked.svg'
+import IconRadioChecked from '../../../../public/icons/radio-checked.svg'
 
 import styles from './radioOption.module.scss'
 

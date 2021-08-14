@@ -2,9 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import classnames from 'classnames'
 
-import IconStarEmpty from '../../../public/icons/star-empty.svg'
-import IconStarHalf from '../../../public/icons/star-half.svg'
-import IconStarFull from '../../../public/icons/star-full.svg'
+import IconStarEmpty from '../../../../public/icons/star-empty.svg'
+import IconStarHalf from '../../../../public/icons/star-half.svg'
+import IconStarFull from '../../../../public/icons/star-full.svg'
 
 import styles from './star.module.scss'
 

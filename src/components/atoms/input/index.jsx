@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import classnames from 'classnames'
 
-import IconDelete from '../../../public/icons/icon-delete.svg'
+import IconDelete from '../../../../public/icons/icon-delete.svg'
 
 import styles from './input.module.scss'
 

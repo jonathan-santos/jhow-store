@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import Image from 'next/image'
 
 import styles from './productCarousel.module.scss'
 
@@ -22,7 +23,7 @@ export const ProductCarousel = ({ items }) => (
           key={i}
           htmlFor={`item-${i}`}
           className={`${styles.item} ${styles[`item-${i}`]}`}>
-          <img src={item.src} alt={item.alt} />
+          <Image src={item.src} alt={item.alt} width="72" height="72" />
         </label>
       ))}
     </div>

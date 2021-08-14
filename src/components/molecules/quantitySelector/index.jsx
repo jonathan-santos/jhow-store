@@ -3,8 +3,8 @@ import PropTypes from 'prop-types'
 
 import { Button, Input } from '../../'
 
-import IconPlus from '../../../public/icons/plus.svg'
-import IconMinus from '../../../public/icons/minus.svg'
+import IconPlus from '../../../../public/icons/plus.svg'
+import IconMinus from '../../../../public/icons/minus.svg'
 
 import styles from './quantitySelector.module.scss'
 

@@ -1,8 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import IconHeartFull from '../../../public/icons/heart-full.svg'
-import IconHeartHalf from '../../../public/icons/heart-half.svg'
+import IconHeartFull from '../../../../public/icons/heart-full.svg'
+import IconHeartHalf from '../../../../public/icons/heart-half.svg'
 
 import styles from './heart.module.scss'
 
