@@ -2,7 +2,7 @@ import QuantitySelector from '.'
 
 export default {
   component: QuantitySelector,
-  title: 'molecules/quantitySelector'
+  title: 'molecules/QuantitySelector'
 }
 
 const props = {
