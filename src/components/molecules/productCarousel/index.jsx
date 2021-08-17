@@ -35,7 +35,9 @@ ProductCarousel.propTypes = {
   items: PropTypes.arrayOf(
     PropTypes.shape({
       src: PropTypes.string,
-      alt: PropTypes.string
+      alt: PropTypes.string,
+      width: PropTypes.string,
+      height: PropTypes.string
     })
   ).isRequired
 }

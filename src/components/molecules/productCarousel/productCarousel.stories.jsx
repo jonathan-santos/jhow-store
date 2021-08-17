@@ -8,9 +8,9 @@ export default {
 }
 
 const items = [
-  { src: ImgProduct, alt: 'Something', width: 144, height: 144 },
-  { src: ImgProduct, alt: 'Something', width: 144, height: 144 },
-  { src: ImgProduct, alt: 'Something', width: 144, height: 144 }
+  { src: ImgProduct, alt: 'Something', width: 180, height: 180 },
+  { src: ImgProduct, alt: 'Something', width: 180, height: 180 },
+  { src: ImgProduct, alt: 'Something', width: 180, height: 180 }
 ]
 
 const Template = (args) => <ProductCarousel {...args} items={items} />
