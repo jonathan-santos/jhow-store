@@ -1,18 +1,15 @@
 // Original code: https://codepen.io/aybukeceylan/pen/RwrRPoO
 
 .container {
-  height: 100%;
   transform-style: preserve-3d;
 }
 
 .items {
   position: relative;
-  height: 100%;
 }
 
 .item {
   position: absolute;
-  width: 60%;
   left: 0;
   right: 0;
   margin: auto;

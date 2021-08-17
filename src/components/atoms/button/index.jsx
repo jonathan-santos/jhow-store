@@ -10,7 +10,7 @@ export const Button = (props) => {
   const classNames = classnames(className, styles.button, styles[color], {
     [styles.secondary]: secondary,
     [styles.bottom]: bottom,
-    [styles.rounded]: rounded,
+    [styles.rounded]: rounded
   })
 
   return (

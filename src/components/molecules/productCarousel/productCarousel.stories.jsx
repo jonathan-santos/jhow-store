@@ -1,6 +1,6 @@
 import ProductCarousel from '.'
 
-import ImgProduct from '../../../public/img/product.png'
+import ImgProduct from '../../../../public/img/product.png'
 
 export default {
   component: ProductCarousel,
@@ -8,9 +8,9 @@ export default {
 }
 
 const items = [
-  { src: ImgProduct, alt: 'Something' },
-  { src: ImgProduct, alt: 'Something' },
-  { src: ImgProduct, alt: 'Something' }
+  { src: ImgProduct, alt: 'Something', width: 144, height: 144 },
+  { src: ImgProduct, alt: 'Something', width: 144, height: 144 },
+  { src: ImgProduct, alt: 'Something', width: 144, height: 144 }
 ]
 
 const Template = (args) => <ProductCarousel {...args} items={items} />

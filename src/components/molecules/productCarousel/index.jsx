@@ -22,8 +22,9 @@ export const ProductCarousel = ({ items }) => (
         <label
           key={i}
           htmlFor={`item-${i}`}
-          className={`${styles.item} ${styles[`item-${i}`]}`}>
-          <Image src={item.src} alt={item.alt} width="72" height="72" />
+          className={`${styles.item} ${styles[`item-${i}`]}`}
+          style={{ width: `${item.width}px` }}>
+          <Image {...item} />
         </label>
       ))}
     </div>

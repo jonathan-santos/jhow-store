@@ -1,6 +1,6 @@
 import Button from '.'
 
-import iconPlus from '../../../public/icons/icon-plus.svg'
+import iconPlus from '../../../../public/icons/icon-plus.svg'
 
 export default {
   component: Button,
