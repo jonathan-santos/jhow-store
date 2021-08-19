@@ -3,15 +3,17 @@ import PropTypes from 'prop-types'
 import Link from 'next/link'
 import Image from 'next/image'
 
+import { Text } from '../../'
+
 import styles from './category.module.scss'
 
 export const Category = ({ title, image, backgroundColor, link }) => (
-  <Link href={link} className={styles.category} style={{ backgroundColor }}>
-    <>
-      <Image src={image} alt={title} layout="fill" />
+  <Link href={link}>
+    <a className={styles.category} style={{ backgroundColor }}>
+      <Image src={image} alt={title} width="150" height="150" />
 
-      <span>{title}</span>
-    </>
+      <Text type="span">{title}</Text>
+    </a>
   </Link>
 )
 

@@ -1,4 +1,28 @@
 .category {
-  all: unset;
+  position: relative;
+  border-radius: 1.5rem;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+
+  &:hover,
+  &:active,
+  &:focus {
+    filter: brightness(85%);
+  }
+
+  & + & {
+    margin-left: 1.6rem;
+  }
+
+  span {
+    position: absolute;
+    border-radius: 1.5rem;
+    padding: 0.3rem 0.6rem;
+    background-color: rgba(255, 255, 255, 0.85);
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
 }
