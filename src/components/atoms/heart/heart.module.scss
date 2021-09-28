@@ -1,10 +1,17 @@
 .heart {
-  all: unset;
+  all: unset; 
   cursor: pointer;
+  padding: 0.25rem;
+  display: flex;
 
   &:hover,
   &:active,
   &:focus {
     filter: brightness(80%);
+  }
+
+  &.background {
+    background-color: var(--color-background);
+    border-radius: 1.5rem;
   }
 }

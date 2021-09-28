@@ -30,3 +30,35 @@ FilledInDark.parameters = {
     default: 'dark'
   }
 }
+
+export const WithBackground = Template.bind({})
+WithBackground.args = {
+  background: true
+}
+
+export const WithBackgroundFilled = Template.bind({})
+WithBackgroundFilled.args = {
+  fill: true,
+  background: true
+}
+
+export const WithBackgroundInDark = Template.bind({})
+WithBackgroundInDark.args = {
+  background: true
+}
+WithBackgroundInDark.parameters = {
+  backgrounds: {
+    default: 'dark'
+  }
+}
+
+export const WithBackgroundFilledInDark = Template.bind({})
+WithBackgroundFilledInDark.args = {
+  fill: true,
+  background: true
+}
+WithBackgroundFilledInDark.parameters = {
+  backgrounds: {
+    default: 'dark'
+  }
+}
