@@ -1,6 +1,7 @@
 import React from 'react'
 import classnames from 'classnames'
 import PropTypes from 'prop-types'
+import Image from 'next/image'
 
 import IconHeartFull from '../../../../public/icons/heart-full.svg'
 import IconHeartHalf from '../../../../public/icons/heart-half.svg'
@@ -13,7 +14,7 @@ export const Heart = ({ fill, toggle, background, className }) => (
       [styles.background]: background
     })}
     onClick={toggle}>
-    <img src={fill ? IconHeartFull : IconHeartHalf} className={styles.icon} />
+    <Image src={fill ? IconHeartFull : IconHeartHalf} className={styles.icon} />
   </button>
 )
 

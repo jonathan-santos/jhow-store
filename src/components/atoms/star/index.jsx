@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import classnames from 'classnames'
+import Image from 'next/image'
 
 import IconStarEmpty from '../../../../public/icons/star-empty.svg'
 import IconStarHalf from '../../../../public/icons/star-half.svg'
@@ -26,7 +27,7 @@ export const Star = ({ state, toggle, size }) => {
 
   return (
     <button className={classNames} onClick={toggle}>
-      <img src={img[state]} width={imgSize[size]} />
+      <Image src={img[state]} width={imgSize[size]} height={imgSize[size]} />
     </button>
   )
 }
