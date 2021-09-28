@@ -1,12 +1,14 @@
 .star {
   all: unset;
   cursor: pointer;
-}
+  display: flex;
 
-.selectable {
-  &:hover,
-  &:active,
-  &:focus {
-    filter: brightness(80%);
+  &.selectable {
+    &:hover,
+    &:active,
+    &:focus {
+      filter: brightness(80%);
+    }
   }
 }
+
