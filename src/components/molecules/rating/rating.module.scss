@@ -1,4 +1,14 @@
 .rating {
   all: unset;
   cursor: pointer;
+
+  padding: 0.2rem 0.4rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  &.background {
+    background-color: var(--color-background);
+    border-radius: 1.5rem;
+  }
 }

@@ -33,3 +33,10 @@ export const FiveStars = Template.bind({})
 FiveStars.args = {
   value: 5
 }
+
+export const WithBackgroundSmall = Template.bind({})
+WithBackgroundSmall.args = {
+  value: 5,
+  size: 'small',
+  background: true
+}
