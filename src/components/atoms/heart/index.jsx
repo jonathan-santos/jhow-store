@@ -14,7 +14,12 @@ export const Heart = ({ fill, toggle, background, className }) => (
       [styles.background]: background
     })}
     onClick={toggle}>
-    <Image src={fill ? IconHeartFull : IconHeartHalf} className={styles.icon} />
+    <Image
+      src={fill ? IconHeartFull : IconHeartHalf}
+      width="19"
+      height="18"
+      className={styles.icon}
+    />
   </button>
 )
 
