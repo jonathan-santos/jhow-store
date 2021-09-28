@@ -26,5 +26,5 @@ export const parameters = {
 }
 
 export const decorators = [
-  (storyFn) => <div style={{ padding: '16px' }}>{storyFn()}</div>
+  (storyFn) => <div id="preview" style={{ padding: '1rem' }}>{storyFn()}</div>
 ]
