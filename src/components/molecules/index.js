@@ -1,4 +1,5 @@
 export * from './category'
+export * from './product'
 export * from './productCarousel'
 export * from './quantitySelector'
 export * from './radioOption'
