@@ -5,10 +5,11 @@ import classnames from 'classnames'
 import styles from './title.module.scss'
 
 export const Title = (props) => {
-  const { children, level } = props
+  const { children, level, className } = props
 
   const TitleElement = `h${level}`
-  const classNames = classnames(styles.title, styles[`h${level}`])
+
+  const classNames = classnames(styles.title, styles[`h${level}`], className)
 
   return (
     <TitleElement {...props} className={classNames}>
@@ -18,12 +19,14 @@ export const Title = (props) => {
 }
 
 Title.defaultProps = {
-  level: '1'
+  level: '1',
+  className: ''
 }
 
 Title.propTypes = {
   children: PropTypes.node.isRequired,
-  level: PropTypes.oneOf(['1', '2', '3', '4', '5', '6'])
+  level: PropTypes.oneOf(['1', '2', '3', '4', '5', '6']),
+  className: PropTypes.string
 }
 
 export default Title

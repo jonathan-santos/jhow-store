@@ -5,10 +5,16 @@ import classnames from 'classnames'
 import styles from './text.module.scss'
 
 export const Text = (props) => {
-  const { children, type, color } = props
+  const { children, type, color, className } = props
 
   const TextElement = type
-  const classNames = classnames(styles.text, styles[type], styles[color])
+
+  const classNames = classnames(
+    className,
+    styles.text,
+    styles[type],
+    styles[color]
+  )
 
   return (
     <TextElement {...props} className={classNames}>
@@ -19,13 +25,15 @@ export const Text = (props) => {
 
 Text.defaultProps = {
   type: 'p',
-  color: 'dark'
+  color: 'dark',
+  className: ''
 }
 
 Text.propTypes = {
   children: PropTypes.node.isRequired,
   type: PropTypes.oneOf(['p', 'span']),
-  color: PropTypes.oneOf(['dark', 'light'])
+  color: PropTypes.oneOf(['dark', 'light']),
+  className: PropTypes.string
 }
 
 export default Text
