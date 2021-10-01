@@ -2,11 +2,11 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Image from 'next/image'
 
-import { Title, Text, Heart, Rating } from '../../'
+import { Title, Text, Heart, Rating } from '../../../'
 
-import styles from './product.module.scss'
+import styles from '../product.module.scss'
 
-export const Product = ({
+export const ProductDetails = ({
   image,
   name,
   description,
@@ -14,10 +14,9 @@ export const Product = ({
   rating,
   isWishlisted
 }) => (
-  <div className={styles.product}>
+  <div className={styles['product-details']}>
     <div className={styles.image}>
       <Image
-        // className={styles.image}
         src={image}
         alt={name}
         placeholder="blur"
@@ -29,8 +28,8 @@ export const Product = ({
     </div>
 
     <div className={styles.information}>
-      <div className={styles.title}>
-        <Title level="2" className={styles.name}>
+      <div className={styles['title-area']}>
+        <Title level="2" className={styles.title}>
           {name}
         </Title>
 
@@ -48,18 +47,18 @@ export const Product = ({
   </div>
 )
 
-Product.defaultProps = {
+ProductDetails.defaultProps = {
   rating: 0,
   isWishlisted: false
 }
 
-Product.propTypes = {
+ProductDetails.propTypes = {
   image: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
   price: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
   rating: PropTypes.number,
   isWishlisted: PropTypes.bool
 }
 
-export default Product
+export default ProductDetails

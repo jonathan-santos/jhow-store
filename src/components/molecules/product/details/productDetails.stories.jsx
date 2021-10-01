@@ -1,10 +1,10 @@
-import Product from '.'
+import ProductDetails from '.'
 
-import ImgProduct from '../../../../public/img/product.png'
+import ImgProduct from '../../../../../public/img/product.png'
 
 export default {
-  component: Product,
-  title: 'molecules/Product',
+  component: ProductDetails,
+  title: 'molecules/Product/ProductDetails',
   parameters: {
     backgrounds: {
       default: 'background'
@@ -15,13 +15,13 @@ export default {
 const defaultArgs = {
   image: ImgProduct,
   name: 'Product name',
+  price: 999.99,
   description:
     'Something about the product, describing it with details and other things.',
-  price: '$ 999.99',
   rating: 4.5
 }
 
-const Template = (args) => <Product {...args} {...defaultArgs} />
+const Template = (args) => <ProductDetails {...args} {...defaultArgs} />
 
 export const Default = Template.bind({})
 Default.args = {}
