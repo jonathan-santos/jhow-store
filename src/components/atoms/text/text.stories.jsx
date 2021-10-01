@@ -23,14 +23,14 @@ export const DarkMultipleParagraphs = (args) => (
 export const DarkSpan = Template.bind({})
 DarkSpan.args = {
   children: 'Text',
-  type: 'span'
+  as: 'span'
 }
 
 export const DarkMultipleSpans = (args) => (
   <>
-    <Text type="span">Text</Text>
-    <Text type="span">Text</Text>
-    <Text type="span">Text</Text>
+    <Text as="span">Text, </Text>
+    <Text as="span">Text, </Text>
+    <Text as="span">Text</Text>
   </>
 )
 
@@ -61,7 +61,7 @@ LightMultipleParagraphs.parameters = {
 export const LightSpan = Template.bind({})
 LightSpan.args = {
   children: 'Text',
-  type: 'span',
+  as: 'span',
   color: 'light'
 }
 LightSpan.parameters = {
@@ -72,15 +72,15 @@ LightSpan.parameters = {
 
 export const LightMultipleSpans = (args) => (
   <>
-    <Text type="span" color="light">
-      Text
+    <Text as="span" color="light">
+      Text,
     </Text>
 
-    <Text type="span" color="light">
-      Text
+    <Text as="span" color="light">
+      Text,
     </Text>
 
-    <Text type="span" color="light">
+    <Text as="span" color="light">
       Text
     </Text>
   </>

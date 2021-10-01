@@ -12,7 +12,7 @@ export const Category = ({ title, image, backgroundColor, link }) => (
     <a className={styles.category} style={{ backgroundColor }}>
       <Image src={image} alt={title} width="150" height="150" />
 
-      <Text type="span">{title}</Text>
+      <Text as="span">{title}</Text>
     </a>
   </Link>
 )

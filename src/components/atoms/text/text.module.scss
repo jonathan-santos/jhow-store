@@ -6,15 +6,15 @@
     margin-top: 1.6rem;
   }
 
-  &.span + &.span {
-    margin-left: 0.8rem;
-  }
-
   &.dark {
     color: var(--color-text-dark);
   }
 
   &.light {
     color: var(--color-text-light);
+  }
+
+  &.bold {
+    font-weight: 600;
   }
 }
