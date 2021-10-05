@@ -12,4 +12,12 @@
   &.h3 {
     font-size: 1.4rem;
   }
+
+  &.dark {
+    color: var(--color-text-dark);
+  }
+
+  &.light {
+    color: var(--color-text-light);
+  }
 }
