@@ -1,0 +1,30 @@
+.header {
+  border-radius: 0 0 1.5rem 1.5rem;
+  padding: 0 1.2rem;
+  background-color: var(--color-background-dark);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  height: 5.6rem;
+
+  @media (min-width: 720px) {
+    display: inline-flex;
+    overflow: visible;
+
+    * + * {
+      margin-left: 1.6rem;
+    }
+  } 
+}
+
+.title {
+  @media (min-width: 720px) {
+    order: 3;
+    height: 100%;
+    border-left: 0.3rem solid white;
+    padding-left: 1.6rem;
+    display: flex;
+    align-items: center;
+  }
+}
