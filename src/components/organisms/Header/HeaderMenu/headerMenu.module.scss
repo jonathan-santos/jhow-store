@@ -1,0 +1,46 @@
+.header-menu {
+  border-radius: 1.5rem;
+  background-color: var(--color-background-dark);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section {
+  padding: 1.6rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  &:not(:last-of-type) {
+    border-bottom: 0.2rem solid #fff;
+  }
+}
+
+.user-icon {
+  margin-right: 1.6rem;
+}
+
+.link-group {
+  padding: 0 1.6rem;
+  flex-basis: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  &:first-of-type {
+    margin-bottom: 1.6rem;
+  }
+
+  > * {
+    flex: 1;
+  }
+
+  > * + * {
+    margin-left: 1.6rem;    
+  }
+}
+
+.link {
+}
