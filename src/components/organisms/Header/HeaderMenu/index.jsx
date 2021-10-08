@@ -1,6 +1,4 @@
 import React from 'react'
-import classnames from 'classnames'
-import PropTypes from 'prop-types'
 
 import { Title, Text, Button } from '../../../'
 
@@ -17,7 +15,11 @@ import CloseIcon from '../../../../../public/icons/close.svg'
 export const HeaderMenu = () => (
   <div className={styles['header-menu']}>
     <div className={styles.section}>
-      <Title color="light" level="2" aria-hidden="true">
+      <Title
+        color="light"
+        level="2"
+        className={styles.title}
+        aria-hidden="true">
         Jhow Store
       </Title>
     </div>
@@ -58,7 +60,11 @@ export const HeaderMenu = () => (
     </div>
 
     <div className={styles.section}>
-      <Button color="in-dark" secondary rounded>
+      <Button
+        color="in-dark"
+        secondary
+        rounded
+        className={styles['close-button']}>
         <img src={CloseIcon} alt="Close icon" />
       </Button>
     </div>

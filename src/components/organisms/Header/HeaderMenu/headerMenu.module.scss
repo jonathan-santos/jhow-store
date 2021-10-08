@@ -1,9 +1,14 @@
 .header-menu {
+  position: relative;
   border-radius: 1.5rem;
   background-color: var(--color-background-dark);
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @media (min-width: 720px) {
+     display: inline-flex;
+  }
 }
 
 .section {
@@ -16,6 +21,17 @@
   &:not(:last-of-type) {
     border-bottom: 0.2rem solid #fff;
   }
+
+  @media (min-width: 720px) {
+    &:last-of-type {
+      display: contents;
+    }
+  }
+}
+
+.title {
+  padding-left: 9.6rem;
+  flex: 1;
 }
 
 .user-icon {
@@ -42,5 +58,10 @@
   }
 }
 
-.link {
+.close-button {
+  @media (min-width: 720px) {
+    position: absolute;
+    top: 1.6rem;
+    left: 1.6rem;
+  }
 }
