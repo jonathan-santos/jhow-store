@@ -29,11 +29,6 @@
   }
 }
 
-.title {
-  padding-left: 9.6rem;
-  flex: 1;
-}
-
 .user-icon {
   margin-right: 1.6rem;
 }
@@ -59,9 +54,11 @@
 }
 
 .close-button {
+  padding: 0;
+
   @media (min-width: 720px) {
     position: absolute;
-    top: 1.6rem;
-    left: 1.6rem;
+    top: 0.8rem;
+    left: 0.8rem;
   }
 }

@@ -9,17 +9,13 @@ import LoginIcon from '../../../../../public/icons/icon-login-register.svg'
 import AccountIcon from '../../../../../public/icons/icon-user.svg'
 import WishlistIcon from '../../../../../public/icons/icon-heart.svg'
 import HistoryIcon from '../../../../../public/icons/icon-history.svg'
-import SettingsIcon from '../../../../../public/icons/settings.svg'
-import CloseIcon from '../../../../../public/icons/close.svg'
+import SettingsIcon from '../../../../../public/icons/icon-settings.svg'
+import CloseIcon from '../../../../../public/icons/icon-close.svg'
 
 export const HeaderMenu = () => (
   <div className={styles['header-menu']}>
     <div className={styles.section}>
-      <Title
-        color="light"
-        level="2"
-        className={styles.title}
-        aria-hidden="true">
+      <Title color="light" level="2" aria-hidden="true">
         Jhow Store
       </Title>
     </div>
@@ -70,7 +66,5 @@ export const HeaderMenu = () => (
     </div>
   </div>
 )
-
-HeaderMenu.propTypes = {}
 
 export default HeaderMenu
