@@ -1,4 +1,6 @@
 import React from 'react'
+import classnames from 'classnames'
+import PropTypes from 'prop-types'
 
 import { Title, Text, Button } from '../../../'
 
@@ -12,8 +14,8 @@ import HistoryIcon from '../../../../../public/icons/icon-history.svg'
 import SettingsIcon from '../../../../../public/icons/icon-settings.svg'
 import CloseIcon from '../../../../../public/icons/icon-close.svg'
 
-export const HeaderMenu = () => (
-  <div className={styles['header-menu']}>
+export const HeaderMenu = ({ className }) => (
+  <div className={classnames(styles['header-menu'], className)}>
     <div className={styles.section}>
       <Title color="light" level="2" aria-hidden="true">
         Jhow Store
@@ -56,15 +58,22 @@ export const HeaderMenu = () => (
     </div>
 
     <div className={styles.section}>
-      <Button
-        color="in-dark"
-        secondary
-        rounded
-        className={styles['close-button']}>
-        <img src={CloseIcon} alt="Close icon" />
-      </Button>
+      <label
+        htmlFor="menu-visible"
+        className={styles['close-button']}
+        aria-hidden="true">
+        <img src={CloseIcon} alt="Menu Icon" />
+      </label>
     </div>
   </div>
 )
+
+HeaderMenu.defaultProps = {
+  className: ''
+}
+
+HeaderMenu.propTypes = {
+  className: PropTypes.string
+}
 
 export default HeaderMenu

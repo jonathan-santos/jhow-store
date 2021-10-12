@@ -1,5 +1,8 @@
 .header-menu {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 0.3rem solid var(--color-in-dark);
   border-radius: 1.5rem;
   background-color: var(--color-background-dark);
   display: flex;
@@ -7,7 +10,9 @@
   justify-content: center;
 
   @media (min-width: 720px) {
-     display: inline-flex;
+    top: 0rem;
+    left: 0.65rem;
+    display: inline-flex;
   }
 }
 
