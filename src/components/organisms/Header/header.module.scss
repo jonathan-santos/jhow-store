@@ -13,31 +13,58 @@
   @media (min-width: 720px) {
     display: inline-flex;
     overflow: visible;
+  }
+}
 
-    * + * {
+.item {
+  display: inline-flex;
+
+  @media (min-width: 720px) {
+    & + & {
       margin-left: 1.6rem;
     }
-  } 
+  }
 }
 
 .button {
-  display: inline-flex;
+  composes: item;
+
+  &:hover,
+  &:active,
+  &:focus {
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+  }
 }
 
 .title {
+  composes: item;
+
   @media (min-width: 720px) {
     order: 3;
     height: 100%;
     border-left: 0.3rem solid white;
     padding-left: 1.6rem;
-    display: flex;
     align-items: center;
   }
 }
 
-
 .menu-visible {
   &:not(:checked) ~ .header-menu {
     display: none;
+  }
+
+  @media (min-width: 720px) {
+    &:checked ~ .item:first-of-type::before {
+      content: '';
+      top: 0;
+      left: 0;
+      position: absolute;
+      z-index: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.2);
+    }
   }
 }

@@ -3,16 +3,18 @@
   top: 0;
   left: 0;
   border: 0.3rem solid var(--color-in-dark);
-  border-radius: 1.5rem;
+  border-radius: 0 0 1.5rem 1.5rem;
   background-color: var(--color-background-dark);
   display: flex;
   flex-direction: column;
   justify-content: center;
-
+  z-index: 1;
+  
   @media (min-width: 720px) {
     top: 0rem;
     left: 0.65rem;
     display: inline-flex;
+    border-radius: 1.5rem;
   }
 }
 
@@ -28,6 +30,10 @@
   }
 
   @media (min-width: 720px) {
+    &:nth-last-of-type(2) {
+      border-bottom-width: 0;
+    }
+
     &:last-of-type {
       display: contents;
     }
@@ -60,10 +66,19 @@
 
 .close-button {
   padding: 0;
+  display: inline-flex;
+
+  &:hover,
+  &:active,
+  &:focus {
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+  }
 
   @media (min-width: 720px) {
     position: absolute;
-    top: 0.8rem;
-    left: 0.8rem;
+    top: 0.4rem;
+    left: 0.5rem;
   }
 }
