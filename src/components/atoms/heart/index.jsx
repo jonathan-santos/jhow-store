@@ -3,8 +3,8 @@ import classnames from 'classnames'
 import PropTypes from 'prop-types'
 import Image from 'next/image'
 
-import IconHeartFull from '../../../../public/icons/heart-full.svg'
-import IconHeartHalf from '../../../../public/icons/heart-half.svg'
+import HeartFullIcon from '../../../../public/icons/heart-full.svg'
+import HeartEmptyIcon from '../../../../public/icons/heart-empty.svg'
 
 import styles from './heart.module.scss'
 
@@ -15,7 +15,7 @@ export const Heart = ({ fill, toggle, background, className }) => (
     })}
     onClick={toggle}>
     <Image
-      src={fill ? IconHeartFull : IconHeartHalf}
+      src={fill ? HeartFullIcon : HeartEmptyIcon}
       width="19"
       height="18"
       className={styles.icon}

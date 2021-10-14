@@ -3,8 +3,8 @@ import PropTypes from 'prop-types'
 
 import { Button, Input } from '../../'
 
-import IconPlus from '../../../../public/icons/plus.svg'
-import IconMinus from '../../../../public/icons/minus.svg'
+import PlusIcon from '../../../../public/icons/plus.svg'
+import MinusIcon from '../../../../public/icons/minus.svg'
 
 import styles from './quantitySelector.module.scss'
 
@@ -14,7 +14,7 @@ export const QuantitySelector = (props) => {
   return (
     <form className={styles['quantity-selector']}>
       <Button onClick={() => change(quantity - 1)} color="in-dark" rounded>
-        <img src={IconMinus} />
+        <img src={MinusIcon} />
       </Button>
 
       <Input
@@ -26,7 +26,7 @@ export const QuantitySelector = (props) => {
       />
 
       <Button onClick={() => change(quantity - 1)} color="in-dark" rounded>
-        <img src={IconPlus} />
+        <img src={PlusIcon} />
       </Button>
     </form>
   )

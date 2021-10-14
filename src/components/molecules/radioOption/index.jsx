@@ -1,8 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import IconRadioUnChecked from '../../../../public/icons/radio-unchecked.svg'
-import IconRadioChecked from '../../../../public/icons/radio-checked.svg'
+import RadioUncheckedIcon from '../../../../public/icons/radio-unchecked.svg'
+import RadioCheckedIcon from '../../../../public/icons/radio-checked.svg'
 
 import styles from './radioOption.module.scss'
 
@@ -15,7 +15,7 @@ export const RadioOption = (props) => {
 
       <img
         className={styles.radio}
-        src={selected ? IconRadioChecked : IconRadioUnChecked}
+        src={selected ? RadioCheckedIcon : RadioUncheckedIcon}
       />
 
       <span className={styles.title}>{title}: </span>

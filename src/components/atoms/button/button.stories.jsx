@@ -1,6 +1,6 @@
 import Button from '.'
 
-import iconPlus from '../../../../public/icons/icon-plus.svg'
+import UserIcon from '../../../../public/icons/user.svg'
 
 export default {
   component: Button,
@@ -66,12 +66,12 @@ SecondaryInDark.parameters = {
 
 export const WithIcon = Template.bind({})
 WithIcon.args = {
-  children: <img src={iconPlus} />
+  children: <img src={UserIcon} />
 }
 
 export const WithIconRounded = Template.bind({})
 WithIconRounded.args = {
-  children: <img src={iconPlus} />,
+  children: <img src={UserIcon} />,
   rounded: true
 }
 

@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import classnames from 'classnames'
 
-import IconDelete from '../../../../public/icons/icon-delete.svg'
+import ClearTextIcon from '../../../../public/icons/clear-text.svg'
 
 import styles from './input.module.scss'
 
@@ -20,7 +20,7 @@ export const Input = (props) => {
 
       {props.value && !props.hideDelete && (
         <img
-          src={IconDelete}
+          src={ClearTextIcon}
           className={styles.iconDelete}
           onClick={props.clear}
         />

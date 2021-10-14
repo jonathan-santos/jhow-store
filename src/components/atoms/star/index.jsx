@@ -3,9 +3,9 @@ import PropTypes from 'prop-types'
 import classnames from 'classnames'
 import Image from 'next/image'
 
-import IconStarEmpty from '../../../../public/icons/star-empty.svg'
-import IconStarHalf from '../../../../public/icons/star-half.svg'
-import IconStarFull from '../../../../public/icons/star-full.svg'
+import StarEmptyIcon from '../../../../public/icons/star-empty.svg'
+import StarHalfIcon from '../../../../public/icons/star-half.svg'
+import StarFullIcon from '../../../../public/icons/star-full.svg'
 
 import styles from './star.module.scss'
 
@@ -15,9 +15,9 @@ export const Star = ({ state, toggle, size }) => {
   })
 
   const img = {
-    empty: IconStarEmpty,
-    half: IconStarHalf,
-    full: IconStarFull
+    empty: StarEmptyIcon,
+    half: StarHalfIcon,
+    full: StarFullIcon
   }
 
   const imgSize = {

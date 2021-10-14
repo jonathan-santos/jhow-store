@@ -6,8 +6,8 @@ import { HeaderMenu } from './headerMenu'
 
 import styles from './header.module.scss'
 
-import MenuIcon from '../../../../public/icons/button-menu.svg'
-import CartIcon from '../../../../public/icons/button-cart.svg'
+import MenuIcon from '../../../../public/icons/menu.svg'
+import CartIcon from '../../../../public/icons/cart.svg'
 
 export const Header = ({ title }) => (
   <header className={styles.header}>
