@@ -1,8 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import { Title } from '../../'
-import { HeaderMenu } from './HeaderMenu'
+import { Title } from '../..'
+import { HeaderMenu } from './headerMenu'
 
 import styles from './header.module.scss'
 
